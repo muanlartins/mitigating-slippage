@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitigando Slippage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Mitigando Slippage</h1>
+    <p id="date"></p>
+    <div class="side">
+      <h2>Ordens de Compra</h2>
+      <ol id="bids">
+      </ol>
+      <p>Vender 1 BTC por <span id="sell"></span> USD</p>
+    </div>
+    <div class="side">
+      <h2>Ordens de Venda</h2>
+      <ol id="asks">
+      </ol>
+      <p>Comprar 1 BTC por <span id="buy"></span> USD</p>
+    </div>
+    <div id="sell-statistics">
+    </div>
+    <div id="buy-statistics">
+    </div>
+    <div id="sell-quote">
+
+    </div>
+    <div id="buy-quote">
+      
+    </div>
+    <button id="sell-quote-button">Simular Cotação de Venda</button>
+    <button id="buy-quote-button">Simular Cotação de Compra</button>
+    <ol id="sell-prices">
+      <li></li>
+    </ol>
+    <ol id="buy-prices">
+      <li></li>
+    </ol>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
